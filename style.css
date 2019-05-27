@@ -1,0 +1,41 @@
+body
+{
+  margin: 0;
+  padding: 0;
+}
+.container
+{
+  width: 100%;
+  position: relative;
+}
+.slider
+{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slider:nth-child(1)
+{
+  z-index: 1;
+  background: linear-gradient(rgba(255, 0, 0, 1), rgba(200, 200, 200, 1), rgba(255, 0, 0, 1));
+  opacity: 1;
+}
+.slider:nth-child(2)
+{
+  top: 250px;
+  z-index: 0;
+  left: 30%;
+  opacity: 0.5;
+  background: linear-gradient(rgba(0, 255, 0, 1), rgba(200, 200, 200, 1), rgba(0, 255, 0, 1));
+}
+.slider:nth-child(3)
+{
+  z-index: -1;
+  top: 250px;
+  left: 70%;
+  opacity: 0.5;
+  background: linear-gradient(rgba(0, 0, 255, 1), rgba(200, 200, 200, 1), rgba(0, 0, 255, 1));
+}

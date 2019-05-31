@@ -10,8 +10,6 @@ body
 }
 .slider
 {
-  width: 400px;
-  height: 300px;
   position: absolute;
   top: 200px;
   left: 50%;
@@ -19,23 +17,35 @@ body
 }
 .slider:nth-child(1)
 {
+  width: 400px;
+  height: 300px;
   z-index: 1;
-  background: linear-gradient(rgba(255, 0, 0, 1), rgba(200, 200, 200, 1), rgba(255, 0, 0, 1));
+  background: url("images/shirt_blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: 1;
 }
 .slider:nth-child(2)
 {
+  width: 200px;
+  height: 150px;
   top: 250px;
   z-index: 0;
-  left: 30%;
+  left: 40%;
   opacity: 0.5;
-  background: linear-gradient(rgba(0, 255, 0, 1), rgba(200, 200, 200, 1), rgba(0, 255, 0, 1));
+  background: url("images/shirt_red.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .slider:nth-child(3)
 {
+  width: 200px;
+  height: 150px;
   z-index: -1;
   top: 250px;
-  left: 70%;
+  left: 60%;
   opacity: 0.5;
-  background: linear-gradient(rgba(0, 0, 255, 1), rgba(200, 200, 200, 1), rgba(0, 0, 255, 1));
+  background: url("images/shirt_green.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
